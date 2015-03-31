@@ -1,0 +1,13 @@
+extends ../layout
+
+block menu
+  include ../includes/menu
+
+block content
+  div(ng-controller='workoutCtrl')
+    
+  each section in sections
+    section(class='container')
+      != section
+
+  script(src='/bower/requirejs/require.js', data-main='/public/js/main')
