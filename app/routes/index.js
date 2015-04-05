@@ -6,6 +6,7 @@ module.exports = function (application) {
     // Load routes
 
     require('./test_routes')(app);
+    require('./user_routes')(app);
 
     next();
   }
